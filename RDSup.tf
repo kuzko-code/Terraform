@@ -8,5 +8,4 @@ resource "aws_db_instance" "MyDB" {
   password             = "Rdm45099-"
   parameter_group_name = "default.mysql8.0.20"
   skip_final_snapshot  = true
-  vpc_security_group_ids = [ aws_security_group.allowed_ports.id ]
 }
